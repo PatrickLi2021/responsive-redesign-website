@@ -1,0 +1,470 @@
+/* Controls the alignment of the library logo and the navigation bar*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Controls the width of the library logo (and the spacing between the logo and the nav bar) */
+
+.library-logo-container {
+    width: 25%;
+    height: auto;
+}
+
+
+/* Controls the dimensions of the library logo */
+
+.library-logo-container img {
+    width: 150px;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+
+
+/* Format the navigation bar horizontally and adds border between every element */
+
+.navbar {
+    margin-left: 50px;
+    margin-top: 2%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+
+
+/* Ensures that there is no right border after the last nav element */
+
+.navbar ul li:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+
+/* Helps to style the arrows in the nav bar */
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    padding-right: 20px;
+}
+
+
+/* Places a downward-pointing arrow after every element in the nav bar */
+
+.navbar ul li.with-arrow a::after {
+    content: "\25be";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translateY(-50%);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li.with-arrow:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li.no-arrow:hover {
+    transform: scale(1.1);
+}
+
+
+/* Centers the main heading on the page*/
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Sets the fonts, margins, etc. on the main library headers*/
+
+.title {
+    margin-bottom: -0.5%;
+    font-size: 5vh;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Controls the font size and weight of the slogan */
+
+.slogan {
+    font-weight: normal;
+    font-size: 150%;
+    margin-bottom: 3%;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Centers the picture of the library reading room */
+
+.lib-background-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+
+/* Sets the dimensions of the library image*/
+
+.lib-background {
+    width: 60%;
+    height: auto;
+}
+
+
+/* Sets the dimensions of the library hours and "Welcome to the Library" line */
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Controls the spacing between the library hours and heading */
+
+.welcome-container h4 {
+    margin-top: 20px;
+    margin: 7px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Controls the spacing between each of the library hours lines */
+
+.welcome-container h2 {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Styles the four buttons below the library background picture */
+
+button {
+    color: #fff;
+    background-color: #d91111;
+    border-radius: 10px;
+    font-size: 14px;
+    align-content: center;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+
+/* Makes button darker when hovered over */
+
+button:hover {
+    background-color: #450606;
+    /* Darker color when hovered */
+}
+
+
+/* Centers the button container and controls its width */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Centers the elements in the Newest Arrivals section and defines the margin */
+
+.newest-arrivals {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Styles the search bar below Newest Arrivals */
+
+input.search {
+    width: 40%;
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("assets/search.svg") no-repeat 13px;
+    border-radius: 10px;
+}
+
+
+/* Controls the dimensions of each book image in Newest Arrivals */
+
+.book-image {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Aligns the items inside this container in a row */
+
+.book-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: auto;
+}
+
+
+/* Controls the height of the arrowheads in the Newest Arrivals section */
+
+.arrowhead img {
+    height: 20%;
+}
+
+.arrowhead img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Controls the height of the arrowhead next to the library picture */
+
+.pic-arrowhead img {
+    height: 3vw;
+    margin-left: 4%;
+}
+
+.pic-arrowhead img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Sets the dimensions of the books inside the Newest Arrivals div */
+
+.inner-book-div {
+    width: auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.inner-book-div:hover {
+    transform: scale(1.1);
+}
+
+
+/* Centers all the visual elements in the challenges section */
+
+.challenges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Centers the header in the challenges section and defines the font type */
+
+.challenges-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Sets the dimensions of each reading challenge image */
+
+.challenge-image {
+    /* height: 15%; */
+    width: 400px;
+    margin: 2%;
+}
+
+
+/* Enlarges the challenge image when hovered over */
+
+.challenge-image:hover {
+    transform: scale(1.1);
+}
+
+
+/* Sets the dimensions of each upcoming event widget */
+
+.widget {
+    width: auto;
+    height: 40%;
+    max-height: 30%;
+    max-width: 70%;
+}
+
+
+/* Aligns the upcoming events widgets in a row */
+
+.upcoming-events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+/* Centers the upcoming events header and sets the font type */
+
+.upcoming-events-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Creates the border around the widget and centers the content within the widgets */
+
+.inner-widget-div {
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Enlarges the upcoming event widget when hovered over */
+
+.inner-widget-div:hover {
+    transform: scale(1.1);
+}
+
+
+/* Adds spacing between each line of paragraph text within each widget */
+
+.inner-widget-div p {
+    margin-top: 20px;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+
+/* Adds extra spacing between the picture and the text in each widget*/
+
+.inner-widget-div p:first-of-type {
+    margin-top: 15px;
+}
+
+
+/* Centers the footer image inside its own div*/
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Sets the dimensions of the footer image*/
+
+.bottom-logo {
+    width: 45%;
+    height: auto;
+}
+
+
+/* Sets a top margin above the footer image*/
+
+.footer-container {
+    margin-top: 5%;
+}
+
+
+/* Media Queries */
+
+
+/* Aligns buttons in a column if the screen size gets too small */
+
+@media (max-width: 530px) {
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+/* Aligns navbar in a block and everything else in a column (centered) if screen size gets too small */
+
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+    }
+    .upcoming-events-container {
+        flex-direction: column;
+    }
+    .challenges {
+        flex-direction: column;
+    }
+    .title {
+        text-align: center;
+    }
+    .book-image-container {
+        flex-direction: column;
+        height: auto;
+        /* width: 20%; */
+        justify-content: center;
+        align-content: center;
+    }
+    .inner-book-div,
+    .arrowhead {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .arrowhead img {
+        width: 50%;
+        transform: rotate(90deg);
+    }
+    .arrowhead:hover img {
+        transform: rotate(90deg) scale(1.1);
+    }
+    .inner-book-div p {
+        text-align: center;
+    }
+}
