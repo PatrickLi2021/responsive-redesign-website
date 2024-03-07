@@ -214,12 +214,21 @@ button:hover {
 /* Styles the search bar below Newest Arrivals */
 
 input.search {
-    width: 40%;
+    width: 200%;
     border: 1px solid #555;
     display: block;
     padding: 9px 4px 9px 40px;
     background: transparent url("assets/search.svg") no-repeat 13px;
     border-radius: 10px;
+}
+
+
+/* Aligns the search input bar */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 
