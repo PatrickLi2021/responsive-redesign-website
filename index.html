@@ -14,12 +14,12 @@
 
             <nav class="navbar">
                 <ul>
-                    <li class="with-arrow"><a href="#">eLibrary</a></li>
-                    <li class="with-arrow"><a href="#">Services</a></li>
-                    <li class="with-arrow"><a href="#">Fundraising</a></li>
-                    <li class="no-arrow"><a href="#">Calendar</a></li>
-                    <li class="with-arrow"><a href="#">About</a></li>
-                    <li class="no-arrow"><a href="#">Contact</a></li>
+                    <li class="with-arrow" aria-label="nav-menu-item"><a href="#">eLibrary</a></li>
+                    <li class="with-arrow" aria-label="nav-menu-item"><a href="#">Services</a></li>
+                    <li class="with-arrow" aria-label="nav-menu-item"><a href="#">Fundraising</a></li>
+                    <li class="no-arrow" aria-label="nav-menu-item"><a href="#">Calendar</a></li>
+                    <li class="with-arrow" aria-label="nav-menu-item"><a href="#">About</a></li>
+                    <li class="no-arrow" aria-label="nav-menu-item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,40 +44,40 @@
             <h4>Closed</h4>
         </div>
         <div class="buttons">
-            <button>Access Your Library Account</button>
-            <button>Sign up to join our newsletter</button>
-            <button>Get a Library Card</button>
-            <button>Register for a Library Program</button>
+            <button aria-label="button">Access Your Library Account</button>
+            <button aria-label="button">Sign up to join our newsletter</button>
+            <button aria-label="button">Get a Library Card</button>
+            <button aria-label="button">Register for a Library Program</button>
         </div>
         <div class="newest-arrivals">
             <h1>Newest Arrivals</h1>
             <div class="label-container">
-                <label for="search" class="book-search" aria-labelledby="search">
-                    <input class="search" type="search" placeholder="Search...">
+                <label for="search-bar" class="book-search" aria-labelledby="search" aria-label="search">
+                    <input id="search-bar" class="search" type="search" placeholder="Search...">
                 </label>
             </div>
         </div>
         <div class="book-image-container">
-            <div class="arrowhead">
+            <div aria-label="clickable arrow" class="arrowhead">
                 <img src="assets/leftarrowhead.png" alt="left arrowhead">
             </div>
-            <div class="inner-book-div">
+            <div aria-label="clickable book" class="inner-book-div">
                 <img class="book-image" src="assets/mercury.jpg" alt="Mercury by Amy Jo Burns Book Cover">
                 <p>Mercury</p>
             </div>
-            <div class="inner-book-div">
+            <div aria-label="clickable book" class="inner-book-div">
                 <img class="book-image" src="assets/stormwemade.png" alt="The Storm We Made by Vanessa Chan Book Cover">
                 <p>The Storm We Made</p>
             </div>
-            <div class="inner-book-div">
+            <div aria-label="clickable book" class="inner-book-div">
                 <img class="book-image" src="assets/shiftingsilence.png" alt="Shifting Silence by Etel Adnan Book Cover">
                 <p>Shifting Silence</p>
             </div>
-            <div class="inner-book-div">
+            <div aria-label="clickable book" class="inner-book-div">
                 <img class="book-image" src="assets/myfriends.jpg" alt="My Friends by Hisham Matar Book Cover">
                 <p>My Friends</p>
             </div>
-            <div class="arrowhead">
+            <div aria-label="clickable arrow" class="arrowhead">
                 <img src="assets/rightarrowhead.png" alt="right arrowhead">
             </div>
         </div>
@@ -86,33 +86,33 @@
                 <h1>Challenges</h1>
             </div>
             <div class="challenges">
-                <img class="challenge-image" src="assets/loveofreading.png" alt="Reading Challenge">
-                <img class="challenge-image" src="assets/thousandbooks.png" alt="Thousand books Challenge">
+                <img class="challenge-image" src="assets/loveofreading.png" alt="Reading Challenge" aria-label="clickable reading challenge widget">
+                <img class="challenge-image" src="assets/thousandbooks.png" alt="Thousand books Challenge" aria-label="clickable reading challenge widget">
             </div>
         </div>
         <div class="upcoming-events-header">
             <h1>Upcoming Events</h1>
         </div>
         <div class="upcoming-events-container">
-            <div class="inner-widget-div">
+            <div class="inner-widget-div" aria-label="clickable event widget">
                 <img class="widget" src="assets/books.png" alt="Picture of a cartoon stack of books">
                 <h2>Book Drive</h2>
                 <p>27</p>
                 <p>Feb</p>
             </div>
-            <div class="inner-widget-div">
+            <div class="inner-widget-div" aria-label="clickable event widget">
                 <img class="widget" src="assets/yoga.png" alt="Cartoon picture of a woman doing yoga">
                 <h2>Yoga</h2>
                 <p>03</p>
                 <p>Mar</p>
             </div>
-            <div class="inner-widget-div">
+            <div class="inner-widget-div" aria-label="clickable event widget">
                 <img class="widget" src="assets/artscrafts.png" alt="Cartoon picture of a paint brush and palette">
                 <h2>Arts and Crafts</h2>
                 <p>07</p>
                 <p>Mar</p>
             </div>
-            <div class="inner-widget-div">
+            <div class="inner-widget-div" aria-label="clickable event widget">
                 <img class="widget" src="assets/storytime.png" alt="Storytime cartoon of teacher reading to children">
                 <h2>Story Time</h2>
                 <p>12</p>
