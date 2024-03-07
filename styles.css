@@ -225,7 +225,7 @@ input.search {
 
 /* Aligns the search input bar */
 
-.search {
+.book-search {
     display: flex;
     justify-content: center;
     align-content: center;
