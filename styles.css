@@ -214,7 +214,7 @@ button:hover {
 /* Styles the search bar below Newest Arrivals */
 
 input.search {
-    width: 200%;
+    width: 250%;
     border: 1px solid #555;
     display: block;
     padding: 9px 4px 9px 40px;
@@ -370,6 +370,7 @@ input.search {
     justify-content: center;
     width: 150px;
     height: 200px;
+    font-size: 13px;
     max-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
